@@ -1,0 +1,19 @@
+<!DOYCYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="../app.js"></script>
+<script>
+var as = "as";
+<{{!}}/script>
+<script type="text/babel">
+var container = document.getElementById('container');
+var component = App({ search: "" });
+ReactDOM.render(component, container);
+<{{!}}/script>
+</head>
+<body>
+<p> main </p>
+<div id="container">{{{ markup }}}</div>
+</body>
+</html>
